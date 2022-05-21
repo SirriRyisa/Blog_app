@@ -5,7 +5,6 @@ This app is a simple app which mimics a real world blog website where users can 
 # Built with
 - Ruby
 - Ruby on rails
-- postgresql
 
 # Getting started
 
