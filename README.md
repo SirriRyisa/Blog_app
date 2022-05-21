@@ -1,24 +1,33 @@
-# README
+# Blog_app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is a simple app which mimics a real world blog website where users can post comments and see the comments made by other users.
 
-Things you may want to cover:
+# Built with
+- Ruby
+- Ruby on rails
 
-* Ruby version
+# Getting started
 
-* System dependencies
+Follow these steps to get your project up and running
 
-* Configuration
+- You must have a text editor e.g VScode
+- Download and install ruby and ruby on rails. Check official documentation
+   on how to install these.
+- Clone this repo at https://github.com/SirriRyisa/Blog_app
+- cd into the directory and run code .
+- run bundle install
 
-* Database creation
+👤 **Author**
+- GitHub: [@githubhandle](https://github.com/SirriRyisa)
+- Twitter: [@twitterhandle](https://twitter.com/N_Ryisa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sirri-ngwa-ryisa/)
 
-* Database initialization
+## 🤝 Contributing
 
-* How to run the test suite
+Contributions, issues, and feature requests are welcome!
 
-* Services (job queues, cache servers, search engines, etc.)
+Feel free to check the [issues page]().
 
-* Deployment instructions
+## Show your support
 
-* ...
+ Give a ⭐️ if you like this project!
