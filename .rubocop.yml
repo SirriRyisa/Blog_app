@@ -60,3 +60,14 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+
+  # Layout/EndOfLine:
+  # Enabled: true
+  # Description: 'Use Unix-style line endings.'
+  # StyleGuide: '#crlf'
+  # VersionAdded: '0.49'
+  # EnforcedStyle: native
+  # SupportedStyles:
+  #   - native
+  #   - lf
+  #   - crlf

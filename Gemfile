@@ -7,8 +7,6 @@ gem 'pg', '~> 1.3', '>= 1.3.5'
 
 gem 'better_errors', '~> 2.9', '>= 2.9.1'
 
-
-
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.3'
 
