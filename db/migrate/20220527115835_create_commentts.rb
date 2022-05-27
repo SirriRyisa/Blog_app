@@ -3,9 +3,8 @@ class CreateCommentts < ActiveRecord::Migration[7.0]
     create_table :commentts do |t|
       t.string :name
       t.text :text
-      t.references :userr, null: false, foreign_key: true
-      t.references :postt, null: false, foreign_key: true
-      t.references :author_id, null: false, foreign_key: true
+      t.references :user, null: false, foreign_key: true
+      t.references :post, null: false, foreign_key: true
 
       t.timestamps
     end
