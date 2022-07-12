@@ -1,6 +1,6 @@
 # Blog_app
 
-This app is a simple app which mimics a real world blog website where users can post comments and see the comments made by other users.
+This app is a simple app which mimics a real world blog website where users can post comments and see the comments made by other users
 
 # Built with
 - Ruby
