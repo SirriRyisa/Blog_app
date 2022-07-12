@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   # get 'home/index'
-  get 'posts/posts'
-  get 'home/home'
-  get 'users/users'
+  # get 'posts/posts'
+  # get 'home/home'
+  # get 'users/users'
 
   resources :users, only: [:index, :show] do
     resources :posts, only: [:index, :show]
