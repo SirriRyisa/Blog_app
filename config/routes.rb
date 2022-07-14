@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
-  # get 'home/index'
-  # get 'posts/posts'
-  # get 'home/home'
-  # get 'users/users'
 
-  resources :users, only: [:index, :show] do
-    resources :posts, only: [:index, :show]
-  end
+  resources :users, only: [:index, :show]
+  resources :posts, only: [:index, :show]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
