@@ -23,32 +23,32 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_01_165722) do
   create_table "commentts", force: :cascade do |t|
     t.string "name"
     t.text "text"
-    t.bigint "user_id", null: false
-    t.bigint "post_id", null: false
+    t.bigint "userr_id", null: false
+    t.bigint "postt_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "author"
-    t.index ["post_id"], name: "index_commentts_on_post_id"
-    t.index ["user_id"], name: "index_commentts_on_user_id"
+    t.index ["postt_id"], name: "index_commentts_on_post_id"
+    t.index ["userr_id"], name: "index_commentts_on_user_id"
   end
 
   create_table "likees", force: :cascade do |t|
     t.string "name"
-    t.bigint "user_id", null: false
-    t.bigint "post_id", null: false
+    t.bigint "userr_id", null: false
+    t.bigint "postt_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["post_id"], name: "index_likees_on_post_id"
-    t.index ["user_id"], name: "index_likees_on_user_id"
+    t.index ["postt_id"], name: "index_likees_on_post_id"
+    t.index ["userr_id"], name: "index_likees_on_user_id"
   end
 
-  create_table "likes", force: :cascade do |t|
+  create_table "likees", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "posts", force: :cascade do |t|
+  create_table "postts", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
