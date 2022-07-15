@@ -1,7 +1,7 @@
 class Commentt < ApplicationRecord
-  belongs_to :user, class_name: 'User', foreign_key: 'user_id'
-  belongs_to :post
-  after_save :comments_count
+  belongs_to :userr, class_name: 'Userr', foreign_key: 'userr_id'
+  belongs_to :postt
+  after_save :commentts_count
 
   def commentts_count
     post.update!(:commentts_counter)
