@@ -23,16 +23,12 @@
 - **Postgresql**
 - **CSS**
 
-## Methodology used 
-- TDD via RSPEC
-
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
 
 ## Prerequisites
-
-- You need Ruby v3+, Rails v7+ and Postgresql installed on your machine.
+Install Ruby v3+, Rails v7+ and Postgresql installed on your machine.
 
 ## Setup
 
