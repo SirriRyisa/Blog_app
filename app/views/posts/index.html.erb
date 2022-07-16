@@ -1,5 +1,9 @@
-<h1>List of all posts</h1>
+<% if @posts.present? %>
+<%= render(partial: 'users/user_card', locals: {user: @posts.first.user}) %>
+<% else %>
+This user doesn't have any post yet!
+<% end %>
 
 <% @posts.each do |post| %>
-  Item: <%= post.item%><br>
-  <% end %>
+  <%= render partial: 'post_card', locals: { post: post, comments: post.recent_five_comments} %>
+<% end %>
