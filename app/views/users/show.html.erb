@@ -13,5 +13,5 @@
     <%= link_to "See all posts" , user_posts_path(@user) if @user.posts_counter> 0 %>
       <%= link_to "Add a new post" , new_user_post_url(@user) %>
 
-        <%=form_with model: User.new, url: destroy_user_session_path, method: :delete, data: { turbo: false }  do %> <button class="custom-button">Sign out</button>
+        <%=form_with model: Users.new, url: destroy_user_session_path, method: :delete, data: { turbo: false }  do %> <button class="custom-button">Sign out</button>
           <% end %>
