@@ -1,33 +1,77 @@
-# Blog_app
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This app is a simple app which mimics a real world blog website where users can post comments and see the comments made by other users.
+# BLOG_APP
 
-# Built with
-- Ruby
-- Ruby on rails
+> Description the project.
 
-# Getting started
 
-Follow these steps to get your project up and running
+## Built With
 
-- You must have a text editor e.g VScode
-- Download and install ruby and ruby on rails. Check official documentation
-   on how to install these.
-- Clone this repo at https://github.com/SirriRyisa/Blog_app
-- cd into the directory and run code .
-- run bundle install
+- Major languages
+- Frameworks
+- Technologies used
 
-👤 **Author**
-- GitHub: [@githubhandle](https://github.com/SirriRyisa)
-- Twitter: [@twitterhandle](https://twitter.com/N_Ryisa)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sirri-ngwa-ryisa/)
+## Live Demo (if available)
+
+[Live Demo Link](https://livedemo.com)
+
+
+## Built With
+
+- **Ruby**
+- **Rails**
+- **Postgresql**
+- **CSS**
+
+## Getting Started
+To get a local copy up and running follow these simple example steps.
+
+
+## Prerequisites
+Install Ruby v3+, Rails v7+ and Postgresql installed on your machine.
+
+## Setup
+
+- Clone the project `git@github.com:EzekielUtshudi/Blog_app.git`
+- navigate to the folder `cd blog-app`
+- Install required gems `bundle i`
+
+## Usage
+- start the server `rails s`
+
+- Enjoy interacting with the app.
+### Test
+
+```sh
+rspec
+```
+rails db:seed
+
+
+
+
+## Author
+
+👤 **Sirri Ryisa**
+
+- GitHub: [@SirriRyisa](https://github.com/EzekielUtshudi)
+- Twitter: [@N_Ryisa](https://twitter.com/UtshudiEzekiel)
+- LinkedIn: [@sirri-ngwa-ryisa](https://www.linkedin.com/in/ezekiel-utshudi-195782162/)
+
+
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
- Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
