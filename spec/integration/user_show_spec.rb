@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 RSpec.describe 'Testing user index page', type: :feature do
   describe 'GET index' do
