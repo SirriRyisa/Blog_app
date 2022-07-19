@@ -3,7 +3,7 @@
 <div class="users-list">
   <% @users.each do |user| %>
     <%= link_to user do %>
-      <%= render partial: "user_card", locals: { user: user } %>
+      <%= render user %>
     <% end %>
   <% end %>
 </div>

@@ -8,11 +8,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @users = User.find(params[:id])
-    @recent_posts = @users.recent_3_posts
-    respond_to do |format|
-      format.html
-      # format.json { render json: @user }
-    end
+    @user = User.find(params[:id])
+    @recent_posts = @user.recent_3_posts
   end
 end

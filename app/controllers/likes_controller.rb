@@ -13,13 +13,13 @@ class LikesController < ApplicationController
 
     return unless new_like.save
 
-    flash[:notice] = 'You liked this post.'
+    flash[:notice] = 'Liked post.'
     redirect_back_or_to user_post_url(@post_author, @post)
   end
 
   def destroy
     @liked_posts_by_this_user.destroy_all
-    flash[:notice] = 'You removed your like from this post.'
+    flash[:notice] = 'Like removed.'
     redirect_back_or_to user_post_url(@post_author, @post)
   end
 end

@@ -1,17 +1,33 @@
-<h1>User Details</h1>
-<%= render partial: "user_card" , locals: { user: @user } %>
-  <%= render partial: "bio_card" , locals: { user: @user } %>
+<h1> <%= @user.name %> User Details </h1>
 
-    <h2>Last three posts:</h2>
+<%= render @user %>
 
-    <div class="card-list">
-      <% @recent_posts.each do |post| %>
-        <%= render partial: "posts/post_card" , locals: { post: post } %>
-          <% end %>
-    </div>
+<div class="card-list">
+  <h2>Bio:</h2>
+  <p><%= @user.bio %></p>
+</div>
 
-    <%= link_to "See all posts" , user_posts_path(@user) if @user.posts_counter> 0 %>
-      <%= link_to "Add a new post" , new_user_post_url(@user) %>
+<h2>Last three posts:</h2>
 
-        <%=form_with model: Users.new, url: destroy_user_session_path, method: :delete, data: { turbo: false }  do %> <button class="custom-button">Sign out</button>
-          <% end %>
+<div class="card-list">
+  <% @recent_posts.each do |post| %>
+    <div class="posts">
+  <%= link_to user_post_path(post.user_id, post.id) do %>
+    <h4><%=post.title%></h4>
+  <% end %>
+  <p><%=post.text%></p>
+  <p>
+    <span>
+    Comments: <%= post.comments_counter ? post.comments_counter : 0 %>
+    </span>
+    <span>
+    likes: <%= post.likes_counter ? post.likes_counter : 0 %>
+    </span>
+  </p>
+</div>
+
+  <% end %>
+</div>
+
+
+<button><%= link_to "See all posts", user_posts_path(@user.id) %></button>

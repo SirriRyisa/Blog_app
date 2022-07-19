@@ -79,3 +79,20 @@ group :test do
 end
 
 gem 'ffi'
+
+
+# <%= link_to "Comments:", new_user_post_comment_path(@current_user, post) %>
+# <%= form_with model: @like, url: user_post_likes_path(@current_user, post), method: :post, class: 'form' do |f|%>
+#   <%= f.submit "Add Like"%>
+#   <%= post.likes_counter ? post.likes_counter : 0 %>
+# <% end %>
+
+# <% if @posts.present? %>
+# <%= render(partial: 'users/user_card', locals: {user: @posts.first.user}) %>
+# <% else %>
+# This user doesn't have any post yet!
+# <% end %>
+
+# <% @posts.each do |post| %>
+#   <%= render partial: 'post_card', locals: { post: post, comments: post.recent_five_comments} %>
+# <% end %>

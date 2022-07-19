@@ -1,10 +1,7 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.includes(:user).where(user: params[:user_id])
-    respond_to do |format|
-      format.html
-      format.json { render json: @posts }
-    end
+    @user =  User.find(params[:user_id])
+    @posts = Post.where(user_id: @user.id)
   end
 
   def create
@@ -17,10 +14,10 @@ class PostsController < ApplicationController
     new_post.user = user
 
     if new_post.save
-      flash[:notice] = 'New post created successfully.'
+      flash[:notice] = 'Successfully created a new post.'
       redirect_to user_post_url(user, new_post)
     else
-      flash[:error] = 'Creating new post failed!'
+      flash[:error] = 'Failed to create new post!'
       @post = new_post
       render :new
     end
