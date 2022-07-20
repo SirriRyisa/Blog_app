@@ -55,10 +55,9 @@ group :development, :test do
 end
 
 group :development, :test do
-  gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'rails-controller-testing'
-
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -79,7 +78,6 @@ group :test do
 end
 
 gem 'ffi'
-
 
 # <%= link_to "Comments:", new_user_post_comment_path(@current_user, post) %>
 # <%= form_with model: @like, url: user_post_likes_path(@current_user, post), method: :post, class: 'form' do |f|%>
